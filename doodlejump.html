@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,24 +17,46 @@
          <i class="fas fa-expand fa-2x"></i> 
 	<script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>	
     </html>
-    <h1>Doodle jump is a game where you are a little green dude and have to bounce to the top its a peaceful game so yeah its fun.</h1>
+    <h1>doodle jump is a game where you a green alien looking gy and have to jump to the top of the course thingy. </h1>
     <script>
 
       function openGame() {
       var win = window.open()
+      win.alert('scroll down for fullscreen button')
+      win.document.body.style.backgroundColor = "black";
       var url = "https://lunanom.kalebdoesthings.repl.co/service/hvtrs8%2F-wuw%2Cdmoflgjwmr.mre%2F"
       var iframe = win.document.createElement("iframe")
+      x = Math.floor(Math.random() * 10);
       iframe.style.width = "100%";
       iframe.style.height = "100%";
       iframe.style.border = "True";
-      iframe.src = url
+      iframe.style.border.backgroundColor = "black";
+      iframe.src = url 
+      iframe.id = "monke";
       win.document.body.appendChild(iframe)
+      // Create a button element
+      const button = win.document.createElement('button')
+  button.style.width = "100%"; 
+  button.style.height = "10%"; 
+  green = "seagreen"
+  // Set the button text to 'Can you click me?'
+  button.innerText = 'Fullscreen'
+  button.id = 'mainButton'
+
+  button.style.backgroundColor = green;
+  button.addEventListener('click', () => {
+    
+    win.document.getElementById('monke').requestFullscreen()
+  })
+  
+  win.document.body.appendChild(button)
     
     
     
     }
       
       </script>
+      
     <button class="block" onclick=openGame()>Open Game</button>
 
 
