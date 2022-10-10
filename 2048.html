@@ -1,68 +1,85 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            a:link {
-              color: green;
-              background-color: transparent;
-              text-decoration: none;
-            }
-            a:visited {
-              color: rgb(255, 0, 247);
-              background-color: transparent;
-              text-decoration: none;
-            }
-            a:hover {
-              color: red;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-            a:active {
-              color: yellow;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-            </style>   
-        
-        </head>
-        <center>
-        <body>
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <div class="w3-container"></div>
-        
-            <div class="w3-bar w3-border w3-dark-grey">
-                <div class="w3-bar-item"><b></b><strong><a href="games.html"target="blank_">GAMES</a></div></b></strong>
-                <div class="w3-bar-item"><b></b><strong><a href="teset2.html"target="blank_">MONKE VIDEOS</a></div></b></strong>
-                <div class="w3-bar-item"><b></b><strong><a href="movie.html"target="blank_">MOVIES</a></div></b></strong>
-                <div class="w3-bar-item"><b></b><strong><a href="main.html"target="blank_">HOME</a></div></b></strong>
-                
-                  
-            
-            
-            
-            
-            
-            
-            
-            </div>
-            <link rel="stylesheet" href="style.css">
-          <script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>
-        <script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>
-    <center>
+<head>
+
+</head>
+<center>
+
+
+    <!DOCTYPE html>
+    <html>
+       <head>
+        <link rel="stylesheet" href="style.css">
         <title>2048</title>
-        <iframe id="monke" src="games/2048/index.html" width="1600" height="850" scrolling="no"></iframe>
-        <button type="button" class="block" onclick="document.getElementById('monke').requestFullscreen()">Fullscreen</button>
-        <script src="games/2048/js/animframe_polyfill.js"></script>
-    <script src="games/2048/js/application.js"></script>
-    <script src="games/2048/js/bind_polyfill.js"></script>
-    <script src="games/2048/js/classlist_polyfill.js"></script>
-    <script src="games/2048/js/game_manager.js"></script>
-    <script src="games/2048/js/grid.js"></script>
-    <script src="games/2048/js/html_actuator.js"></script>   
-    <script src="games/2048/js/keyboard_input_manager.js"></script> 
-    <script src="games/2048/js/local_storage_manager.js"></script>
-    <script src="games/2048/js/tile.js"></script>
+        </head>
+        <body>
+         <i class="fas fa-expand fa-2x"></i> 
+	<script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>	
+    </html>
+    <h1>2048 is a game where you have to combine numbers to get 2048 yiu use arrow keys to move the numbers. </h1>
+    <script>
+
+      function openGame() {
+      var win = window.open()
+      win.alert('scroll down for fullscreen button')
+      win.document.body.style.backgroundColor = "black";
+      var url = "https://lunanom.kalebdoesthings.repl.co/service/hvtrs8%2F-wuw%2C224%3A.mre%2F"
+      var iframe = win.document.createElement("iframe")
+      x = Math.floor(Math.random() * 10);
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "True";
+      iframe.style.border.backgroundColor = "black";
+      iframe.src = url 
+      iframe.id = "monke";
+      win.document.body.appendChild(iframe)
+      // Create a button element
+      const button = win.document.createElement('button')
+  button.style.width = "100%"; 
+  button.style.height = "10%"; 
+  green = "seagreen"
+  // Set the button text to 'Can you click me?'
+  button.innerText = 'Fullscreen'
+  button.id = 'mainButton'
+
+  button.style.backgroundColor = green;
+  button.addEventListener('click', () => {
+    
+    win.document.getElementById('monke').requestFullscreen()
+  })
+  
+  win.document.body.appendChild(button)
+    
+    
+    
+    }
+      
+      </script>
+      
+    <button class="block" onclick=openGame()>Open Game</button>
+
+
+
+    
+
+
+
+   
+    <script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </center>
-        </head>
-        </html>
+</html>
