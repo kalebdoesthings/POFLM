@@ -12,14 +12,30 @@
         <link rel="stylesheet" href="style.css">
         <title>doodlejump</title>
         </head>
-       <script>alert("IT MAY TAKE SOME TIME TO LOAD btw tell me if it doesnt work")</script>
         <body>
          <i class="fas fa-expand fa-2x"></i> 
-					<iframe id="monke" src="games/doodle-jump/index.html" width="1600" height="850" allowfullscreen scrolling="no"></iframe>
-                    <button type="button" class="block" onclick="document.getElementById('monke').requestFullscreen()">Fullscreen</button>
-                </body>
+	<script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>	
     </html>
+    <h1>Doodle jump is a game where you are a little green dude and have to bounce to the top its a peaceful game so yeah its fun.</h1>
+    <script>
+
+      function openGame() {
+      var win = window.open()
+      var url = "https://lunanom.kalebdoesthings.repl.co/service/hvtrs8%2F-wuw%2Cdmoflgjwmr.mre%2F"
+      var iframe = win.document.createElement("iframe")
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "True";
+      iframe.src = url
+      win.document.body.appendChild(iframe)
     
+    
+    
+    }
+      
+      </script>
+    <button class="block" onclick=openGame()>Open Game</button>
+
 
 
     
