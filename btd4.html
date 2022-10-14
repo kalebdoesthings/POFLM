@@ -10,17 +10,54 @@
     <html>
        <head>
         <link rel="stylesheet" href="style.css">
-        <title>btd4</title>
+        <title>2048</title>
         </head>
-       <script>alert("IT MAY TAKE SOME TIME TO LOAD btw tell me if it doesnt work")</script>
         <body>
          <i class="fas fa-expand fa-2x"></i> 
-         <script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>
-         <iframe id="monke" src="games/btd4/index.html" width="1700" height="800" allowfullscreen scrolling="no"></iframe>
-         <button type="button" class="block" onclick="document.getElementById('monke').requestFullscreen()">Fullscreen</button>
-        </body>
+	<script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>	
     </html>
+    <h1>2048 is a game where you have to combine numbers to get 2048 you use arrow keys to move the numbers. </h1>
+    <script>
+
+      function openGame() {
+      var win = window.open()
+      win.alert('scroll down for fullscreen button')
+      win.document.body.style.backgroundColor = "black";
+      var url = "https://lunanom.kalebdoesthings.repl.co/service/hvtrs8%2F-ufkl9%3Aamdn2las7m35cgqv7fqift9hnt-c-qiveq-mpgnqoaicl%2Cgmoelguqepcmnvelt%2Ccmm-gcdeevs-idr%3Dupl%3Fhvtrs8%2F-s1.cmczmncwq.aoo%2Frrmdwcvimn%2Faqsgtqbwciev-%3Alhv%7Br3xazob-1ge00423-41%60c%2F4gc%3A-c8gc%2F5g819a2g6gda%25050F%60lmols%2Ftmwgr%2Fdgfgnqe%2F4%2Fezpcnqimn%2Cxol%24cmnvakngr%3Feltgrrrksg%26tigw%3Fdgfcunt%24lcne%3Dgn%24cmultpy%3FANL%24scnktkzg%3D2%26t%3D79c3%3A1a45773%60d63%24lkbq%3Daope%24mkd%3F118%24pcrgnv%3Djtvpq%3A-%2Fuwu.qiveq.eomgne%2Ccmm-sktg%2Fwn%60lmciefgcmgsutd%2F%60lmols%2Ftmwgr%2Fdgfgnqe%2F4!sv%3Dg%251DCIJE1cAdvswBvJ5wN8pnEM4FkyIr'272DYOBsCr1d2NWGSK1FBO61goKt17ItZ24e9QZpKAoFyGZ'272%40dvtz8CHOfO2ai0PRCTP0H1o'272D1'272DQMCexzqC5kp7zdStlraI%25050BxrJhXmR90dx1MJmoDafL'24c'3Feltgrrrksg%26ppatmkgn%3F-%3B4%3B972%3B0%3A900686225"
+      var iframe = win.document.createElement("iframe")
+      x = Math.floor(Math.random() * 10);
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "True";
+      iframe.style.border.backgroundColor = "black";
+      iframe.src = url 
+      iframe.id = "monke";
+      win.document.body.appendChild(iframe)
+      // Create a button element
+      const button = win.document.createElement('button')
+  button.style.width = "100%"; 
+  button.style.height = "10%"; 
+  green = "seagreen"
+  // Set the button text to 'Can you click me?'
+  button.innerText = 'Fullscreen'
+  button.id = 'mainButton'
+
+  button.style.backgroundColor = green;
+  button.addEventListener('click', () => {
     
+    win.document.getElementById('monke').requestFullscreen()
+  })
+  
+  win.document.body.appendChild(button)
+    
+    
+    
+    }
+      
+      </script>
+      
+    <button class="block" onclick=openGame()>Open Game</button>
+
 
 
     
@@ -28,7 +65,7 @@
 
 
    
-    
+    <script>(function () {window.onbeforeunload = function() { return 1; };})()  (window.confirm) </script>
 
 
 
